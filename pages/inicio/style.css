@@ -16,7 +16,7 @@ header {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../../recurse/jpg/fondo_pollo.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../recurse/jpg/fondo_pollo.jpg);
 }
 
 .logo_principal {
@@ -79,9 +79,20 @@ header {
     font-size: 25px;
     color: white;
     margin: 0px;
-    padding: 150px 10px 500px 10px;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 150px 10px 150px 10px;
+
 }
+
+.news {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 80px 70px 80px;
+    color: white;
+    margin: 0px;
+    text-align: center;
+}
+
+
 
 @media (max-width:526px) {
     header {
@@ -91,5 +102,12 @@ header {
 
     .nav_principal ul li a {
         margin: 8px;
+    }
+}
+
+@media (max-width:778px) {
+
+    .news {
+        flex-direction: column;
     }
 }
